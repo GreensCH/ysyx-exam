@@ -55,7 +55,7 @@ include $(FILELIST_MK)
 
 DIFF_REF_PATH = $(NEMU_HOME)
 # DIFF_REF_SO = $(NEMU_HOME)/build/riscv64-nemu-interpreter-so
-DIFF_REF_SO = /home/chang/programs/ysyx-workbench/nemu/tools/spike-diff/build/riscv64-spike-so
+DIFF_REF_SO = $(NEMU_HOME)/tools/spike-diff/build/riscv64-spike-so
 ARGS_DIFF = --diff=$(DIFF_REF_SO)
 
 # $(DIFF_REF_SO):
@@ -93,12 +93,10 @@ else
 endif
 
 run: $(RUN)
-	$(call git_commit, "run NPC")
 	$(NPC_EXEC)
 
 gdb: $(BIN) $(DIFF_REF_SO)
 	@rm -rf $(OBJ_DIR)
-	$(call git_commit, "gdb NPC")
 	gdb -s $(BIN) --args $(NPC_EXEC)
 
 

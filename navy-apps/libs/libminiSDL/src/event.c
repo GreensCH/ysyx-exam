@@ -93,11 +93,7 @@ static int inline read_keyinfo(uint8_t *type, uint8_t *sym){
 
 int SDL_PollEvent(SDL_Event *ev) {
   uint8_t type = 0, sym = 0;
-  // SDL_PumpEvents();
 
-
-  // if (pop(&type, &sym)){
-  //printf("SDL_PollEvent\n");
   if (read_keyinfo(&type, &sym)){
     ev->type = type;
     ev->key.keysym.sym = sym;
@@ -105,19 +101,16 @@ int SDL_PollEvent(SDL_Event *ev) {
     switch(type){
     case SDL_KEYDOWN:
       key_state[sym] = 1;
-      //printf("%d Down\n", (int)sym);
+      printf("%d Down\n", (int)sym);
       break;
-    
     case SDL_KEYUP:
       key_state[sym] = 0;
-      //printf("%d Up\n", (int)sym);
+      printf("%d Up\n", (int)sym);
+      break;
+    default:
       break;
     }
-  }else {
-    return 0;
   }
-
-  return 1;
 }
 
 int SDL_WaitEvent(SDL_Event *event) {

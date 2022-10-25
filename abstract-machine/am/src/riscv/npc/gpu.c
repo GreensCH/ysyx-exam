@@ -12,11 +12,6 @@ void __am_gpu_init() {
   vgaw = vgactl >> 16;
   vgah = vgactl & 0xFFFF;
   uint32_t *fb = (uint32_t *)(uintptr_t)FB_ADDR;
-  // int i;
-  // for (i = 0; i < vgaw * vgah; i ++) {
-  //   fb[i] = i;
-  //   if(i%vgaw==0) outl(SYNC_ADDR, 1);
-  // }
   
 }
 
@@ -29,7 +24,6 @@ void __am_gpu_config(AM_GPU_CONFIG_T *cfg) {
     .width = vgaw, .height = vgah,
     .vmemsz = 0
   };
-  // printf("screen size w %d,h %d\n",vgaw,vgah);
 }
 
 void __am_gpu_fbdraw(AM_GPU_FBDRAW_T *ctl) {//屏幕大小寄存器

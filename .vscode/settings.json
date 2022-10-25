@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.v": "verilog",
+    "random": "c",
+    "trap.h": "c",
+    "fixedptc.h": "c",
+    "stdio.h": "c",
+    "stdlib.h": "c"
+  }
+}

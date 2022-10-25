@@ -5,7 +5,7 @@
 int main() {
   NDL_Init(0);
   while(1){
-    printf("time%d\n",NDL_GetTicks()/1000000);
+    printf("time%d\n",NDL_GetTicks());
   }
   NDL_Quit();
   return 0;
