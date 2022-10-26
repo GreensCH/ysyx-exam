@@ -85,7 +85,7 @@ class Top extends Module {
   val io = IO(new Bundle {
     val master  = new TopAxiMaster
     val slave = Flipped(new TopAxiMaster)
-    val interrupt = Input(Bool())
+    val interrupt: Bool = Input(Bool())
   })
   // useless port
   TopAxiMaster.useless_slave(io.slave)
@@ -98,10 +98,6 @@ class Top extends Module {
   io.master.awburst := core.io.maxi4.aw.bits.burst
   io.master.awvalid := core.io.maxi4.aw.valid
   core.io.maxi4.aw.ready := io.master.awready
-
-//  core.io.maxi4.ar.ready := true.B
-//  core.io.maxi4.aw.ready := true.B
-//  core.io.maxi4.w.ready := true.B
 
   io.master.arid     := core.io.maxi4.ar.bits.id
   io.master.arlen    := core.io.maxi4.ar.bits.len

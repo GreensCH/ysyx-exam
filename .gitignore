@@ -2,3 +2,6 @@
 
 # ignore a file type
 *.vcd
+
+!.vscode
+!.vscode/*

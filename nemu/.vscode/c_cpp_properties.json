@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/chang/exam-test/ysyx-exam/nemu/*",
+                "/home/chang/exam-test/ysyx-exam/nemu/**",
+                "/home/chang/exam-test/ysyx-exam/nemu/src/*",
+                "/home/chang/exam-test/ysyx-exam/nemu/src/**",
+                "/home/chang/exam-test/ysyx-exam/nemu/include/",
+                "/home/chang/exam-test/ysyx-exam/nemu/include/*",
+                "/home/chang/exam-test/ysyx-exam/nemu/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

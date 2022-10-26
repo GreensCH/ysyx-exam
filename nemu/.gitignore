@@ -11,3 +11,5 @@
 include/config
 include/generated
 !tools/fixdep/**
+!.vscode
+!.vscode/*

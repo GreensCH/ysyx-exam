@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "*.v": "verilog",
+    "nemu.h": "c",
+    "riscv.h": "c"
+  }
+}

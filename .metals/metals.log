@@ -1,0 +1,15 @@
+2022.10.26 22:00:06 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chang/exam-test/ysyx-exam/.metals/lsp.trace.json or /home/chang/.cache/metals/lsp.trace.json[0m
+2022.10.26 22:00:06 INFO  logging to file /home/chang/exam-test/ysyx-exam/.metals/metals.log[0m
+2022.10.26 22:00:06 INFO  Started: Metals version 0.11.9 in workspace '/home/chang/exam-test/ysyx-exam' for client Visual Studio Code 1.70.0.[0m
+2022.10.26 22:00:08 INFO  time: initialize in 1.39s[0m
+2022.10.26 22:00:09 WARN  Build server is not auto-connectable.[0m
+2022.10.26 22:00:09 WARN  no build tool detected in workspace '/home/chang/exam-test/ysyx-exam'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2022.10.26 22:00:54 INFO  shutting down Metals[0m
+2022.10.26 22:00:58 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/chang/exam-test/ysyx-exam/.metals/lsp.trace.json or /home/chang/.cache/metals/lsp.trace.json[0m
+2022.10.26 22:00:59 INFO  logging to file /home/chang/exam-test/ysyx-exam/.metals/metals.log[0m
+2022.10.26 22:00:59 INFO  Started: Metals version 0.11.9 in workspace '/home/chang/exam-test/ysyx-exam' for client Visual Studio Code 1.70.0.[0m
+2022.10.26 22:01:00 INFO  time: initialize in 1.25s[0m
+2022.10.26 22:01:02 WARN  Build server is not auto-connectable.[0m
+2022.10.26 22:01:02 WARN  no build tool detected in workspace '/home/chang/exam-test/ysyx-exam'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+10月 26, 2022 10:03:30 下午 org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+信息: Unsupported notification method: $/setTrace

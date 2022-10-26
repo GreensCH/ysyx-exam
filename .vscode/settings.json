@@ -5,6 +5,14 @@
     "trap.h": "c",
     "fixedptc.h": "c",
     "stdio.h": "c",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "fs.h": "c",
+    "common.h": "c",
+    "stdint.h": "c",
+    "cpu.h": "c",
+    "am.h": "c"
+  },
+  "files.watcherExclude": {
+    "**/target": true
   }
 }
